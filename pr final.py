@@ -28,7 +28,7 @@ assert {'text', 'sentiment'}.issubset(dataset.columns), "Missing required column
 
 # Split preprocessed data
 train_data, test_data, train_labels, test_labels = train_test_split(
-    dataset['text'], dataset['sentiment'], test_size=0.2, random_state=42)
+    dataset['text'], dataset['sentiment'], test_size=0.3, random_state=42)
 
 # Model Training
 def train_model(X_train, y_train):
